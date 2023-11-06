@@ -1,0 +1,19 @@
+{
+  "name": "lab2",
+  "version": "1.0.0",
+  "description": "Best lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter min"
+  },
+  "files": [
+    "index.js",
+    "src"
+  ],
+  "author": "trickyshikari",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^3.3.0"
+  }
+}

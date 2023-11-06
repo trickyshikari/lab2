@@ -93,4 +93,24 @@ describe('constructor', function(){
         console.log(mtrx3)
         expect(mtrx3).to.deep.equal(c)
     })
+
+    it('sub matrix', function(){
+        const a = [
+            [1,2,3],
+            [4,5,6]
+        ]    
+        const b = [
+            [1,2,3],
+            [4,5,6]
+        ]     
+        const c = [
+            [0,0,0],
+            [0,0,0]
+        ]
+        var mtrx1 = new Mtrx(a);
+        var mtrx2 = new Mtrx(b);
+        var mtrx3 = mtrx1.sub(mtrx2)
+        console.log(mtrx3)
+        expect(mtrx3).to.deep.equal(c)
+    })
 })

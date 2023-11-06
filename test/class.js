@@ -90,7 +90,7 @@ describe('constructor', function(){
         var mtrx1 = new Mtrx(a);
         var mtrx2 = new Mtrx(b);
         var mtrx3 = mtrx1.add(mtrx2)
-        console.log(mtrx3)
+        
         expect(mtrx3).to.deep.equal(c)
     })
 
@@ -110,7 +110,7 @@ describe('constructor', function(){
         var mtrx1 = new Mtrx(a);
         var mtrx2 = new Mtrx(b);
         var mtrx3 = mtrx1.sub(mtrx2)
-        console.log(mtrx3)
+        
         expect(mtrx3).to.deep.equal(c)
     })
     it('mul matrix', function(){

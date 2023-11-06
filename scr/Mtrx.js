@@ -11,8 +11,11 @@ class Mtrx extends Array{
     set(i, j, a) {
         if(typeof a === 'number'){
             this[i][j] = a
-        }
+        }        
     }
+
+    get rows() { return this.length }
+    get cols() { return this[0].length }
 }
 
 

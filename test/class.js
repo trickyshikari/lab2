@@ -38,7 +38,7 @@ describe('constructor', function(){
             [4,5,6]
         ]        
         var mtrx = new Mtrx(a);
-        expect(mtrx.rows()).to.equal(2)
+        expect(mtrx.rows).to.equal(2)
     })
     it('get cols', function(){
         const a = [
@@ -46,6 +46,6 @@ describe('constructor', function(){
             [4,5,6]
         ]        
         var mtrx = new Mtrx(a);
-        expect(mtrx.cols()).to.equal(3)
+        expect(mtrx.cols).to.equal(3)
     })
 })

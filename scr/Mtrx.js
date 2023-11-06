@@ -29,7 +29,13 @@ class Mtrx extends Array{
         return new Mtrx(addition(this, matrix))
     }
 
-    
+    sub(matrix){
+        if(this.length != matrix.length) throw TypeError('Diferent matrices')
+        if(this[0].cols != matrix[0].cols) throw TypeError('Diferent matrices')
+        const addition = (A, B) => map(A, (n, i, j) => n - B[i][j])
+        
+        return new Mtrx(addition(this, matrix))
+    }
 }
 
 function isNumberArray (obj) {

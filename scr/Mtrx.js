@@ -8,6 +8,11 @@ class Mtrx extends Array{
     }
 
     get(i, j) { return this[i][j] }
+    set(i, j, a) {
+        if(typeof a === 'number'){
+            this[i][j] = a
+        }
+    }
 }
 
 

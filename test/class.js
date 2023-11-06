@@ -22,4 +22,14 @@ describe('constructor', function(){
 
         expect(mtrx.get(0,0)).to.equal(1)
     })
+
+    it('set', function(){
+        const a = [
+            [1,2,3],
+            [4,5,6]
+        ]        
+        var mtrx = new Mtrx(a);
+        mtrx.set(0,0,2);
+        expect(mtrx.get(0,0)).to.equal(2)
+    })
 })

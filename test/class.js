@@ -9,8 +9,8 @@ describe('constructor', function(){
             [4,5,6]
         ]
         
-        var mtrx = Array(a);
-        expect(new Mtrx(a)).to.deep.equal(mtrx)
+        var mtrx = new Mtrx(a);
+        expect(new Mtrx(a)).to.deep.equal(a)
     })
 
     it('get', function(){

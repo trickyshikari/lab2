@@ -13,6 +13,19 @@ describe('constructor', function(){
         expect(new Mtrx(a)).to.deep.equal(a)
     })
 
+    it('accept a number array', function(){
+        const a = [
+            [1,2,3],
+            [4,5,6]
+        ]
+        
+        var mtrx = new Mtrx([
+            [1,2,3],
+            [4,5,6]
+        ]);
+        expect(new Mtrx(a)).to.deep.equal(a)
+    })
+
     it('get', function(){
         const a = [
             [1,2,3],
@@ -47,5 +60,23 @@ describe('constructor', function(){
         ]        
         var mtrx = new Mtrx(a);
         expect(mtrx.cols).to.equal(3)
+    })
+    it('add matrix', function(){
+        const a = [
+            [1,2,3],
+            [4,5,6]
+        ]    
+        const b = [
+            [6,5,4],
+            [3,2,1]
+        ]     
+        const c = [
+            [7,7,7],
+            [7,7,7]
+        ]
+        var mtrx1 = new Mtrx(a);
+        var mtrx2 = new Mtrx(b);
+        
+        expect(mtrx1.add(mtrx2)).to.deep.equal(c)
     })
 })

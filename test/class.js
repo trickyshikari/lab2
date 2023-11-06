@@ -26,6 +26,19 @@ describe('constructor', function(){
         expect(new Mtrx(a)).to.deep.equal(a)
     })
 
+    it('accept Mtrx', function(){
+        const a = [
+            [1,2,3],
+            [4,5,6]
+        ]
+        
+        var mtrx = new Mtrx([
+            [1,2,3],
+            [4,5,6]
+        ]);
+        expect(new Mtrx(mtrx)).to.deep.equal(a)
+    })
+
     it('get', function(){
         const a = [
             [1,2,3],
@@ -76,7 +89,8 @@ describe('constructor', function(){
         ]
         var mtrx1 = new Mtrx(a);
         var mtrx2 = new Mtrx(b);
-        
-        expect(mtrx1.add(mtrx2)).to.deep.equal(c)
+        var mtrx3 = mtrx1.add(mtrx2)
+        console.log(mtrx3)
+        expect(mtrx3).to.deep.equal(c)
     })
 })

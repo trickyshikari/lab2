@@ -32,4 +32,20 @@ describe('constructor', function(){
         mtrx.set(0,0,2);
         expect(mtrx.get(0,0)).to.equal(2)
     })
+    it('get rows', function(){
+        const a = [
+            [1,2,3],
+            [4,5,6]
+        ]        
+        var mtrx = new Mtrx(a);
+        expect(mtrx.rows()).to.equal(2)
+    })
+    it('get cols', function(){
+        const a = [
+            [1,2,3],
+            [4,5,6]
+        ]        
+        var mtrx = new Mtrx(a);
+        expect(mtrx.cols()).to.equal(3)
+    })
 })
